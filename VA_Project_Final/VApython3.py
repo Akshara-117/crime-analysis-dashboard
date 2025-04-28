@@ -70,12 +70,13 @@ with tab1:
     """)
 
 # --- Load datasets common for Tab2 ---
-crime_data_usa = pd.read_csv(r"C:\Users\aksha\OneDrive\Desktop\va\VA_Project_Final\VA_Project_Final\crime_analysis_usa-main\crime_analysis_usa-main\crime_data.csv")
-crime_data_ml = pd.read_csv(r"C:\Users\aksha\OneDrive\Desktop\va\VA_Project_Final\VA_Project_Final\Crime-Data-Analysis-using-EDA-and-Machine-Learning-main\Crime-Data-Analysis-using-EDA-and-Machine-Learning-main\crime__data.csv")
-weapon_data = pd.read_csv(r"C:\Users\aksha\OneDrive\Desktop\va\VA_Project_Final\VA_Project_Final\crime_analysis_usa-main\crime_analysis_usa-main\cleaned_weapon_data.csv")
-hate_crimes = pd.read_csv(r"C:\Users\aksha\OneDrive\Desktop\va\VA_Project_Final\VA_Project_Final\crime_analysis_usa-main\crime_analysis_usa-main\Hate_Crimes.csv")
+crime_data_usa = pd.read_csv('data/crime_data.csv')
+crime_data_ml = pd.read_csv('data/crime__data.csv')
+weapon_data = pd.read_csv('data/cleaned_weapon_data.csv')
+hate_crimes = pd.read_csv('data/Hate_Crimes.csv')
 
 weapon_data.rename(columns={"Unnamed: 0": "Weapon Type"}, inplace=True)
+
 
 # --- Tab 2: Visualizations ---
 with tab2:
